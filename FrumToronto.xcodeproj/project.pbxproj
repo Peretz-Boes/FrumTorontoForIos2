@@ -1,0 +1,890 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65105E391FD840D100EBC67E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65105E381FD840D100EBC67E /* AppDelegate.swift */; };
+		65105E3B1FD840D100EBC67E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65105E3A1FD840D100EBC67E /* MainViewController.swift */; };
+		65105E3E1FD840D100EBC67E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65105E3C1FD840D100EBC67E /* Main.storyboard */; };
+		65105E401FD840D100EBC67E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65105E3F1FD840D100EBC67E /* Assets.xcassets */; };
+		65105E431FD840D100EBC67E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65105E411FD840D100EBC67E /* LaunchScreen.storyboard */; };
+		65105E4E1FD840D100EBC67E /* FrumTorontoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65105E4D1FD840D100EBC67E /* FrumTorontoTests.swift */; };
+		65105E591FD840D100EBC67E /* FrumTorontoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65105E581FD840D100EBC67E /* FrumTorontoUITests.swift */; };
+		6542132C1FE0422A006BCD78 /* BusinessDirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6542132B1FE0422A006BCD78 /* BusinessDirectoryViewController.swift */; };
+		654213301FE042C6006BCD78 /* DirectoryRatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6542132F1FE042C6006BCD78 /* DirectoryRatesViewController.swift */; };
+		654213321FE042F1006BCD78 /* AdvancedSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654213311FE042F1006BCD78 /* AdvancedSearchViewController.swift */; };
+		655861261FDEF1A700E29417 /* BulletinsAndAlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655861251FDEF1A700E29417 /* BulletinsAndAlertsViewController.swift */; };
+		655861281FDEF5C600E29417 /* KosherAlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655861271FDEF5C600E29417 /* KosherAlertsViewController.swift */; };
+		6558612A1FDEF89700E29417 /* ShivaNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655861291FDEF89700E29417 /* ShivaNotificationsViewController.swift */; };
+		6558612C1FDEFB3B00E29417 /* WeeklyShiurimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6558612B1FDEFB3B00E29417 /* WeeklyShiurimViewController.swift */; };
+		6558612E1FDEFD6E00E29417 /* ZmanimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6558612D1FDEFD6E00E29417 /* ZmanimViewController.swift */; };
+		655861301FDF09D600E29417 /* ClassifiedWebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6558612F1FDF09D600E29417 /* ClassifiedWebPageViewController.swift */; };
+		655861321FDF0D0900E29417 /* WeeklySpecialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655861311FDF0D0900E29417 /* WeeklySpecialsViewController.swift */; };
+		655861341FDF0FA500E29417 /* DaveningScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655861331FDF0FA500E29417 /* DaveningScheduleViewController.swift */; };
+		655861361FDF127800E29417 /* ShulListingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655861351FDF127800E29417 /* ShulListingsViewController.swift */; };
+		655861381FDF160A00E29417 /* MinchaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655861371FDF160A00E29417 /* MinchaListViewController.swift */; };
+		6558613A1FDF186800E29417 /* NewslettersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655861391FDF186800E29417 /* NewslettersViewController.swift */; };
+		6558613C1FDF1EB600E29417 /* WeeklyPublicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6558613B1FDF1EB600E29417 /* WeeklyPublicationsViewController.swift */; };
+		6558613E1FDF217400E29417 /* TehillimListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6558613D1FDF217400E29417 /* TehillimListViewController.swift */; };
+		655861401FDF243400E29417 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6558613F1FDF243400E29417 /* AboutUsViewController.swift */; };
+		655861421FDF272200E29417 /* AdvertisingRatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655861411FDF272200E29417 /* AdvertisingRatesViewController.swift */; };
+		655861441FDF2A5700E29417 /* FrequentlyAskedQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655861431FDF2A5700E29417 /* FrequentlyAskedQuestionsViewController.swift */; };
+		655861461FDF2E2800E29417 /* ContactUsWebpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655861451FDF2E2800E29417 /* ContactUsWebpageViewController.swift */; };
+		655AD1531FE1CCAB00BF7A9B /* InternetConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AD1521FE1CCAB00BF7A9B /* InternetConnectivity.swift */; };
+		656416661FD99F1B00C248B9 /* DirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656416651FD99F1B00C248B9 /* DirectoryViewController.swift */; };
+		656416681FD9B2F600C248B9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656416671FD9B2F600C248B9 /* CalendarViewController.swift */; };
+		6564166A1FD9B5CF00C248B9 /* CalendarWebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656416691FD9B5CF00C248B9 /* CalendarWebPageViewController.swift */; };
+		6564166D1FD9C49400C248B9 /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6564166C1FD9C49400C248B9 /* AlertsViewController.swift */; };
+		6564166F1FD9D27F00C248B9 /* ClassifiedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6564166E1FD9D27F00C248B9 /* ClassifiedViewController.swift */; };
+		656416711FD9D7EB00C248B9 /* ShulsAndTefillosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656416701FD9D7EB00C248B9 /* ShulsAndTefillosViewController.swift */; };
+		656416731FD9DE7300C248B9 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656416721FD9DE7300C248B9 /* ContactUsViewController.swift */; };
+		658FAFCB1FF3F1AA0054B7A9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FAFCA1FF3F1AA0054B7A9 /* LoginViewController.swift */; };
+		658FAFCD1FF3F3210054B7A9 /* ProtectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FAFCC1FF3F3210054B7A9 /* ProtectedViewController.swift */; };
+		7203D0C95208028967691E3B /* Pods_FrumTorontoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5F2F2261B955460D855432 /* Pods_FrumTorontoTests.framework */; };
+		A1F46405D276926547EEBE78 /* Pods_FrumTorontoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB3BC60BCE8C1C5615CB112 /* Pods_FrumTorontoUITests.framework */; };
+		CDC39C508C32575F62055F11 /* Pods_FrumToronto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99FBF364BB5B1C3CCCBE3C8 /* Pods_FrumToronto.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65105E4A1FD840D100EBC67E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65105E2D1FD840D100EBC67E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65105E341FD840D100EBC67E;
+			remoteInfo = FrumToronto;
+		};
+		65105E551FD840D100EBC67E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65105E2D1FD840D100EBC67E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65105E341FD840D100EBC67E;
+			remoteInfo = FrumToronto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		226490A62F3029B197DD3905 /* Pods-FrumTorontoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrumTorontoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrumTorontoTests/Pods-FrumTorontoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2FB3BC60BCE8C1C5615CB112 /* Pods_FrumTorontoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrumTorontoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C21230E582010DE9BFAE81 /* Pods-FrumTorontoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrumTorontoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrumTorontoTests/Pods-FrumTorontoTests.release.xcconfig"; sourceTree = "<group>"; };
+		65105E351FD840D100EBC67E /* FrumToronto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrumToronto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65105E381FD840D100EBC67E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65105E3A1FD840D100EBC67E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		65105E3D1FD840D100EBC67E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65105E3F1FD840D100EBC67E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65105E421FD840D100EBC67E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65105E441FD840D100EBC67E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65105E491FD840D100EBC67E /* FrumTorontoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrumTorontoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65105E4D1FD840D100EBC67E /* FrumTorontoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrumTorontoTests.swift; sourceTree = "<group>"; };
+		65105E4F1FD840D100EBC67E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = FrumTorontoTests/Info.plist; sourceTree = "<group>"; };
+		65105E541FD840D100EBC67E /* FrumTorontoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrumTorontoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65105E581FD840D100EBC67E /* FrumTorontoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrumTorontoUITests.swift; sourceTree = "<group>"; };
+		65105E5A1FD840D100EBC67E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6542132B1FE0422A006BCD78 /* BusinessDirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDirectoryViewController.swift; sourceTree = "<group>"; };
+		6542132F1FE042C6006BCD78 /* DirectoryRatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryRatesViewController.swift; sourceTree = "<group>"; };
+		654213311FE042F1006BCD78 /* AdvancedSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedSearchViewController.swift; sourceTree = "<group>"; };
+		655861251FDEF1A700E29417 /* BulletinsAndAlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinsAndAlertsViewController.swift; sourceTree = "<group>"; };
+		655861271FDEF5C600E29417 /* KosherAlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KosherAlertsViewController.swift; sourceTree = "<group>"; };
+		655861291FDEF89700E29417 /* ShivaNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShivaNotificationsViewController.swift; sourceTree = "<group>"; };
+		6558612B1FDEFB3B00E29417 /* WeeklyShiurimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyShiurimViewController.swift; sourceTree = "<group>"; };
+		6558612D1FDEFD6E00E29417 /* ZmanimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZmanimViewController.swift; sourceTree = "<group>"; };
+		6558612F1FDF09D600E29417 /* ClassifiedWebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedWebPageViewController.swift; sourceTree = "<group>"; };
+		655861311FDF0D0900E29417 /* WeeklySpecialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklySpecialsViewController.swift; sourceTree = "<group>"; };
+		655861331FDF0FA500E29417 /* DaveningScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaveningScheduleViewController.swift; sourceTree = "<group>"; };
+		655861351FDF127800E29417 /* ShulListingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShulListingsViewController.swift; sourceTree = "<group>"; };
+		655861371FDF160A00E29417 /* MinchaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinchaListViewController.swift; sourceTree = "<group>"; };
+		655861391FDF186800E29417 /* NewslettersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewslettersViewController.swift; sourceTree = "<group>"; };
+		6558613B1FDF1EB600E29417 /* WeeklyPublicationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyPublicationsViewController.swift; sourceTree = "<group>"; };
+		6558613D1FDF217400E29417 /* TehillimListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TehillimListViewController.swift; sourceTree = "<group>"; };
+		6558613F1FDF243400E29417 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		655861411FDF272200E29417 /* AdvertisingRatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisingRatesViewController.swift; sourceTree = "<group>"; };
+		655861431FDF2A5700E29417 /* FrequentlyAskedQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyAskedQuestionsViewController.swift; sourceTree = "<group>"; };
+		655861451FDF2E2800E29417 /* ContactUsWebpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsWebpageViewController.swift; sourceTree = "<group>"; };
+		655AD1521FE1CCAB00BF7A9B /* InternetConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectivity.swift; sourceTree = "<group>"; };
+		656416651FD99F1B00C248B9 /* DirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
+		656416671FD9B2F600C248B9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		656416691FD9B5CF00C248B9 /* CalendarWebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWebPageViewController.swift; sourceTree = "<group>"; };
+		6564166C1FD9C49400C248B9 /* AlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
+		6564166E1FD9D27F00C248B9 /* ClassifiedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedViewController.swift; sourceTree = "<group>"; };
+		656416701FD9D7EB00C248B9 /* ShulsAndTefillosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShulsAndTefillosViewController.swift; sourceTree = "<group>"; };
+		656416721FD9DE7300C248B9 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		658FAFCA1FF3F1AA0054B7A9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		658FAFCC1FF3F3210054B7A9 /* ProtectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedViewController.swift; sourceTree = "<group>"; };
+		83113BB79BF0073341EC040E /* Pods-FrumTorontoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrumTorontoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrumTorontoUITests/Pods-FrumTorontoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		84A95BA0252FEE0FB0919D40 /* Pods-FrumToronto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrumToronto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrumToronto/Pods-FrumToronto.debug.xcconfig"; sourceTree = "<group>"; };
+		CC5F2F2261B955460D855432 /* Pods_FrumTorontoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrumTorontoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99FBF364BB5B1C3CCCBE3C8 /* Pods_FrumToronto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrumToronto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4F0DA530D56B5671644B9F4 /* Pods-FrumTorontoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrumTorontoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrumTorontoUITests/Pods-FrumTorontoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FAA6ABE08BCEDEC5DF1D22E1 /* Pods-FrumToronto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrumToronto.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrumToronto/Pods-FrumToronto.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65105E321FD840D100EBC67E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC39C508C32575F62055F11 /* Pods_FrumToronto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65105E461FD840D100EBC67E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7203D0C95208028967691E3B /* Pods_FrumTorontoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65105E511FD840D100EBC67E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F46405D276926547EEBE78 /* Pods_FrumTorontoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65105E2C1FD840D100EBC67E = {
+			isa = PBXGroup;
+			children = (
+				65105E371FD840D100EBC67E /* FrumToronto */,
+				65105E571FD840D100EBC67E /* FrumTorontoUITests */,
+				65105E361FD840D100EBC67E /* Products */,
+				CD1AA0A7ECA7DB6146B2F4A3 /* Pods */,
+				C466A89DCE1976E5873DBF45 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		65105E361FD840D100EBC67E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65105E351FD840D100EBC67E /* FrumToronto.app */,
+				65105E491FD840D100EBC67E /* FrumTorontoTests.xctest */,
+				65105E541FD840D100EBC67E /* FrumTorontoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65105E371FD840D100EBC67E /* FrumToronto */ = {
+			isa = PBXGroup;
+			children = (
+				65105E381FD840D100EBC67E /* AppDelegate.swift */,
+				65105E3A1FD840D100EBC67E /* MainViewController.swift */,
+				656416651FD99F1B00C248B9 /* DirectoryViewController.swift */,
+				656416671FD9B2F600C248B9 /* CalendarViewController.swift */,
+				656416691FD9B5CF00C248B9 /* CalendarWebPageViewController.swift */,
+				6564166C1FD9C49400C248B9 /* AlertsViewController.swift */,
+				6564166E1FD9D27F00C248B9 /* ClassifiedViewController.swift */,
+				656416701FD9D7EB00C248B9 /* ShulsAndTefillosViewController.swift */,
+				656416721FD9DE7300C248B9 /* ContactUsViewController.swift */,
+				655861251FDEF1A700E29417 /* BulletinsAndAlertsViewController.swift */,
+				655861271FDEF5C600E29417 /* KosherAlertsViewController.swift */,
+				655861291FDEF89700E29417 /* ShivaNotificationsViewController.swift */,
+				6558612B1FDEFB3B00E29417 /* WeeklyShiurimViewController.swift */,
+				6558612F1FDF09D600E29417 /* ClassifiedWebPageViewController.swift */,
+				655861311FDF0D0900E29417 /* WeeklySpecialsViewController.swift */,
+				6558612D1FDEFD6E00E29417 /* ZmanimViewController.swift */,
+				655861331FDF0FA500E29417 /* DaveningScheduleViewController.swift */,
+				655861351FDF127800E29417 /* ShulListingsViewController.swift */,
+				655861371FDF160A00E29417 /* MinchaListViewController.swift */,
+				655861391FDF186800E29417 /* NewslettersViewController.swift */,
+				6558613B1FDF1EB600E29417 /* WeeklyPublicationsViewController.swift */,
+				6558613D1FDF217400E29417 /* TehillimListViewController.swift */,
+				6558613F1FDF243400E29417 /* AboutUsViewController.swift */,
+				655861411FDF272200E29417 /* AdvertisingRatesViewController.swift */,
+				655861431FDF2A5700E29417 /* FrequentlyAskedQuestionsViewController.swift */,
+				655861451FDF2E2800E29417 /* ContactUsWebpageViewController.swift */,
+				6542132B1FE0422A006BCD78 /* BusinessDirectoryViewController.swift */,
+				6542132F1FE042C6006BCD78 /* DirectoryRatesViewController.swift */,
+				654213311FE042F1006BCD78 /* AdvancedSearchViewController.swift */,
+				658FAFCA1FF3F1AA0054B7A9 /* LoginViewController.swift */,
+				658FAFCC1FF3F3210054B7A9 /* ProtectedViewController.swift */,
+				655AD1521FE1CCAB00BF7A9B /* InternetConnectivity.swift */,
+				65105E3C1FD840D100EBC67E /* Main.storyboard */,
+				65105E4F1FD840D100EBC67E /* Info.plist */,
+				65105E4C1FD840D100EBC67E /* FrumTorontoTests */,
+				65105E3F1FD840D100EBC67E /* Assets.xcassets */,
+				65105E411FD840D100EBC67E /* LaunchScreen.storyboard */,
+				65105E441FD840D100EBC67E /* Info.plist */,
+			);
+			path = FrumToronto;
+			sourceTree = "<group>";
+		};
+		65105E4C1FD840D100EBC67E /* FrumTorontoTests */ = {
+			isa = PBXGroup;
+			children = (
+				65105E4D1FD840D100EBC67E /* FrumTorontoTests.swift */,
+			);
+			path = FrumTorontoTests;
+			sourceTree = "<group>";
+		};
+		65105E571FD840D100EBC67E /* FrumTorontoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				65105E581FD840D100EBC67E /* FrumTorontoUITests.swift */,
+				65105E5A1FD840D100EBC67E /* Info.plist */,
+			);
+			path = FrumTorontoUITests;
+			sourceTree = "<group>";
+		};
+		C466A89DCE1976E5873DBF45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D99FBF364BB5B1C3CCCBE3C8 /* Pods_FrumToronto.framework */,
+				CC5F2F2261B955460D855432 /* Pods_FrumTorontoTests.framework */,
+				2FB3BC60BCE8C1C5615CB112 /* Pods_FrumTorontoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD1AA0A7ECA7DB6146B2F4A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84A95BA0252FEE0FB0919D40 /* Pods-FrumToronto.debug.xcconfig */,
+				FAA6ABE08BCEDEC5DF1D22E1 /* Pods-FrumToronto.release.xcconfig */,
+				226490A62F3029B197DD3905 /* Pods-FrumTorontoTests.debug.xcconfig */,
+				55C21230E582010DE9BFAE81 /* Pods-FrumTorontoTests.release.xcconfig */,
+				83113BB79BF0073341EC040E /* Pods-FrumTorontoUITests.debug.xcconfig */,
+				E4F0DA530D56B5671644B9F4 /* Pods-FrumTorontoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65105E341FD840D100EBC67E /* FrumToronto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65105E5D1FD840D100EBC67E /* Build configuration list for PBXNativeTarget "FrumToronto" */;
+			buildPhases = (
+				308958FA13DCD279C9840CCB /* [CP] Check Pods Manifest.lock */,
+				65105E311FD840D100EBC67E /* Sources */,
+				65105E321FD840D100EBC67E /* Frameworks */,
+				65105E331FD840D100EBC67E /* Resources */,
+				B97F25EA387D2956FF29D350 /* [CP] Embed Pods Frameworks */,
+				860421821FBD73BC882730DA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrumToronto;
+			productName = FrumToronto;
+			productReference = 65105E351FD840D100EBC67E /* FrumToronto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65105E481FD840D100EBC67E /* FrumTorontoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65105E601FD840D100EBC67E /* Build configuration list for PBXNativeTarget "FrumTorontoTests" */;
+			buildPhases = (
+				E9CAC52A082FFE68287754CD /* [CP] Check Pods Manifest.lock */,
+				65105E451FD840D100EBC67E /* Sources */,
+				65105E461FD840D100EBC67E /* Frameworks */,
+				65105E471FD840D100EBC67E /* Resources */,
+				9105975C9E473FE046D8788E /* [CP] Embed Pods Frameworks */,
+				C1FD909AF7AE06D6E056AC96 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65105E4B1FD840D100EBC67E /* PBXTargetDependency */,
+			);
+			name = FrumTorontoTests;
+			productName = FrumTorontoTests;
+			productReference = 65105E491FD840D100EBC67E /* FrumTorontoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65105E531FD840D100EBC67E /* FrumTorontoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65105E631FD840D100EBC67E /* Build configuration list for PBXNativeTarget "FrumTorontoUITests" */;
+			buildPhases = (
+				E5D09032308D8C8191B60D27 /* [CP] Check Pods Manifest.lock */,
+				65105E501FD840D100EBC67E /* Sources */,
+				65105E511FD840D100EBC67E /* Frameworks */,
+				65105E521FD840D100EBC67E /* Resources */,
+				BD9CA253E4A27D2730209B9C /* [CP] Embed Pods Frameworks */,
+				1F8E88A6298A5337BEC64DE0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65105E561FD840D100EBC67E /* PBXTargetDependency */,
+			);
+			name = FrumTorontoUITests;
+			productName = FrumTorontoUITests;
+			productReference = 65105E541FD840D100EBC67E /* FrumTorontoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65105E2D1FD840D100EBC67E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Alan Rabinowitz";
+				TargetAttributes = {
+					65105E341FD840D100EBC67E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					65105E481FD840D100EBC67E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 65105E341FD840D100EBC67E;
+					};
+					65105E531FD840D100EBC67E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 65105E341FD840D100EBC67E;
+					};
+				};
+			};
+			buildConfigurationList = 65105E301FD840D100EBC67E /* Build configuration list for PBXProject "FrumToronto" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65105E2C1FD840D100EBC67E;
+			productRefGroup = 65105E361FD840D100EBC67E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65105E341FD840D100EBC67E /* FrumToronto */,
+				65105E481FD840D100EBC67E /* FrumTorontoTests */,
+				65105E531FD840D100EBC67E /* FrumTorontoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65105E331FD840D100EBC67E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65105E431FD840D100EBC67E /* LaunchScreen.storyboard in Resources */,
+				65105E401FD840D100EBC67E /* Assets.xcassets in Resources */,
+				65105E3E1FD840D100EBC67E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65105E471FD840D100EBC67E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65105E521FD840D100EBC67E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F8E88A6298A5337BEC64DE0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrumTorontoUITests/Pods-FrumTorontoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		308958FA13DCD279C9840CCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrumToronto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		860421821FBD73BC882730DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrumToronto/Pods-FrumToronto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9105975C9E473FE046D8788E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrumTorontoTests/Pods-FrumTorontoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B97F25EA387D2956FF29D350 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FrumToronto/Pods-FrumToronto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrumToronto/Pods-FrumToronto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD9CA253E4A27D2730209B9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrumTorontoUITests/Pods-FrumTorontoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1FD909AF7AE06D6E056AC96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrumTorontoTests/Pods-FrumTorontoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5D09032308D8C8191B60D27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrumTorontoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9CAC52A082FFE68287754CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrumTorontoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65105E311FD840D100EBC67E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656416681FD9B2F600C248B9 /* CalendarViewController.swift in Sources */,
+				658FAFCD1FF3F3210054B7A9 /* ProtectedViewController.swift in Sources */,
+				655861301FDF09D600E29417 /* ClassifiedWebPageViewController.swift in Sources */,
+				6558612A1FDEF89700E29417 /* ShivaNotificationsViewController.swift in Sources */,
+				6564166D1FD9C49400C248B9 /* AlertsViewController.swift in Sources */,
+				655861281FDEF5C600E29417 /* KosherAlertsViewController.swift in Sources */,
+				654213301FE042C6006BCD78 /* DirectoryRatesViewController.swift in Sources */,
+				6558612E1FDEFD6E00E29417 /* ZmanimViewController.swift in Sources */,
+				654213321FE042F1006BCD78 /* AdvancedSearchViewController.swift in Sources */,
+				656416711FD9D7EB00C248B9 /* ShulsAndTefillosViewController.swift in Sources */,
+				655861341FDF0FA500E29417 /* DaveningScheduleViewController.swift in Sources */,
+				6558613C1FDF1EB600E29417 /* WeeklyPublicationsViewController.swift in Sources */,
+				655861461FDF2E2800E29417 /* ContactUsWebpageViewController.swift in Sources */,
+				6564166A1FD9B5CF00C248B9 /* CalendarWebPageViewController.swift in Sources */,
+				658FAFCB1FF3F1AA0054B7A9 /* LoginViewController.swift in Sources */,
+				65105E3B1FD840D100EBC67E /* MainViewController.swift in Sources */,
+				6542132C1FE0422A006BCD78 /* BusinessDirectoryViewController.swift in Sources */,
+				6558613E1FDF217400E29417 /* TehillimListViewController.swift in Sources */,
+				655861321FDF0D0900E29417 /* WeeklySpecialsViewController.swift in Sources */,
+				65105E391FD840D100EBC67E /* AppDelegate.swift in Sources */,
+				655861421FDF272200E29417 /* AdvertisingRatesViewController.swift in Sources */,
+				6558613A1FDF186800E29417 /* NewslettersViewController.swift in Sources */,
+				655861381FDF160A00E29417 /* MinchaListViewController.swift in Sources */,
+				655861401FDF243400E29417 /* AboutUsViewController.swift in Sources */,
+				6564166F1FD9D27F00C248B9 /* ClassifiedViewController.swift in Sources */,
+				656416661FD99F1B00C248B9 /* DirectoryViewController.swift in Sources */,
+				656416731FD9DE7300C248B9 /* ContactUsViewController.swift in Sources */,
+				655AD1531FE1CCAB00BF7A9B /* InternetConnectivity.swift in Sources */,
+				655861261FDEF1A700E29417 /* BulletinsAndAlertsViewController.swift in Sources */,
+				655861361FDF127800E29417 /* ShulListingsViewController.swift in Sources */,
+				655861441FDF2A5700E29417 /* FrequentlyAskedQuestionsViewController.swift in Sources */,
+				6558612C1FDEFB3B00E29417 /* WeeklyShiurimViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65105E451FD840D100EBC67E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65105E4E1FD840D100EBC67E /* FrumTorontoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65105E501FD840D100EBC67E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65105E591FD840D100EBC67E /* FrumTorontoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65105E4B1FD840D100EBC67E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65105E341FD840D100EBC67E /* FrumToronto */;
+			targetProxy = 65105E4A1FD840D100EBC67E /* PBXContainerItemProxy */;
+		};
+		65105E561FD840D100EBC67E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65105E341FD840D100EBC67E /* FrumToronto */;
+			targetProxy = 65105E551FD840D100EBC67E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65105E3C1FD840D100EBC67E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65105E3D1FD840D100EBC67E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65105E411FD840D100EBC67E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65105E421FD840D100EBC67E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65105E5B1FD840D100EBC67E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65105E5C1FD840D100EBC67E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65105E5E1FD840D100EBC67E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84A95BA0252FEE0FB0919D40 /* Pods-FrumToronto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74KMGU4Y9Z;
+				INFOPLIST_FILE = FrumToronto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peretz.FrumToronto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		65105E5F1FD840D100EBC67E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAA6ABE08BCEDEC5DF1D22E1 /* Pods-FrumToronto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74KMGU4Y9Z;
+				INFOPLIST_FILE = FrumToronto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peretz.FrumToronto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		65105E611FD840D100EBC67E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 226490A62F3029B197DD3905 /* Pods-FrumTorontoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrumTorontoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alan.FrumTorontoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrumToronto.app/FrumToronto";
+			};
+			name = Debug;
+		};
+		65105E621FD840D100EBC67E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C21230E582010DE9BFAE81 /* Pods-FrumTorontoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrumTorontoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alan.FrumTorontoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrumToronto.app/FrumToronto";
+			};
+			name = Release;
+		};
+		65105E641FD840D100EBC67E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83113BB79BF0073341EC040E /* Pods-FrumTorontoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrumTorontoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alan.FrumTorontoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FrumToronto;
+			};
+			name = Debug;
+		};
+		65105E651FD840D100EBC67E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4F0DA530D56B5671644B9F4 /* Pods-FrumTorontoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrumTorontoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alan.FrumTorontoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FrumToronto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65105E301FD840D100EBC67E /* Build configuration list for PBXProject "FrumToronto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65105E5B1FD840D100EBC67E /* Debug */,
+				65105E5C1FD840D100EBC67E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65105E5D1FD840D100EBC67E /* Build configuration list for PBXNativeTarget "FrumToronto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65105E5E1FD840D100EBC67E /* Debug */,
+				65105E5F1FD840D100EBC67E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65105E601FD840D100EBC67E /* Build configuration list for PBXNativeTarget "FrumTorontoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65105E611FD840D100EBC67E /* Debug */,
+				65105E621FD840D100EBC67E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65105E631FD840D100EBC67E /* Build configuration list for PBXNativeTarget "FrumTorontoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65105E641FD840D100EBC67E /* Debug */,
+				65105E651FD840D100EBC67E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65105E2D1FD840D100EBC67E /* Project object */;
+}
