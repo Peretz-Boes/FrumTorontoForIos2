@@ -18,4 +18,7 @@ class ProtectedViewController: UIViewController {
         self.performSegue(withIdentifier: "segueToLoginViewController", sender: self)
     }
     
+    @IBAction func saveRegistrationData(_ sender: Any) {
+        
+    }
 }

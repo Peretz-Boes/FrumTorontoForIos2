@@ -8,6 +8,7 @@ target 'FrumToronto' do
   pod 'Toast-Swift', '~> 3.0.1'
   pod 'Toaster'
   pod 'ReachabilitySwift'
+  pod 'Alamofire', '~> 4.3'
 
   # Pods for FrumToronto
 

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Toast_Swift
+import Alamofire
 
 class LoginViewController: UIViewController {
 
@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
             self.view.makeToast("The username and password text fields are required")
             return
         }
-        let url = URL(fileURLWithPath: <#T##String#>)
+        let url = URL(fileURLWithPath: "https:www.google.co.il")
         let session = URLSession.shared
         let request = NSMutableURLRequest(url: url)
         request.httpMethod="POST"
@@ -42,14 +42,31 @@ class LoginViewController: UIViewController {
             guard let _:Data=data else{
                 return
             }
+            
+            let json:Any?
+            
+            do{
+                json=try JSONSerialization.jsonObject(with: data!, options: [])
+            }catch{
+                return
+            }
+            
+            guard let server_response=json as? NSDictionary else{
+                return
+            }
+            
+            if let data_block=server_response["data"] as?NSDictionary{
+                if let session_data=data_block["session"]as? String{
+                    let preferences = UserDefaults.standard
+                    preferences.set(session_data, forKey: "session")
+                    DispatchQueue.main.async {
+                        self.performSegue(withIdentifier: "segueToProtectedViewController",sender: nil)
+                    }
+                }
+            }
+            
         }
-        
-        
-        
-        
-        
-        
-        
+        task.resume()
     }
     
     @IBAction func registerUser(_ sender: Any) {
