@@ -9,6 +9,9 @@ target 'FrumToronto' do
   pod 'Toaster'
   pod 'ReachabilitySwift'
   pod 'Alamofire', '~> 4.3'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
   # Pods for FrumToronto
 

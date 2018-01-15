@@ -40,4 +40,9 @@ class MainViewController: UIViewController {
         UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
         
     }
+    
+    @IBAction func showPersonsDirectory(_ sender: Any) {
+        let url = NSURL(string:"http://mobileapps.x10host.com/database.php")
+        UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+    }
 }
