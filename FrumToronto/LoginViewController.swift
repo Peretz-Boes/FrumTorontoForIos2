@@ -67,7 +67,7 @@ class LoginViewController: UIViewController {
                         print(error)
                     }
                 })
-                performSegue(withIdentifier: "segueToProtectedViewController", sender: nil)
+                displayAlertMessage(userMessage: "Registration successful")
             }
         }else{
             self.view.makeToast("Internet service is unavailable")

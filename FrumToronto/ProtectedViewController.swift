@@ -13,7 +13,6 @@ import Firebase
 class ProtectedViewController: UIViewController {
 
     @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var addressTextField:UITextField!
     let userId = Auth.auth().currentUser?.uid
