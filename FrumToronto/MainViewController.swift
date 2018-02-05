@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class MainViewController: UIViewController {
 
@@ -42,7 +43,14 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func showPersonsDirectory(_ sender: Any) {
-        let url = NSURL(string:"http://mobileapps.x10host.com/database.php")
+        let url = NSURL(string:"https://frumtoronto-a2f1d.firebaseio.com/users")
+        UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+    }
+    @IBAction func showCalendarLogin(_ sender: Any) {
+        let url = NSURL(string: "http://www.frumtoronto.com/diary_EditE.asp?mode=Add")
+        self.view.makeToast("When the page loads click on calendar to log in to the calendar")
         UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
     }
 }
+
+

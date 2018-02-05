@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 import Toast_Swift
 import Firebase
 import FirebaseAuth
@@ -15,15 +14,23 @@ import FirebaseAuth
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var captchaTextLabel: UILabel!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var captchaSolutionTextField: UITextField!
     let defaultValues = UserDefaults.standard
     let appKey = "9e0b5ab1e41d44dd811825b3aa5e7c27"
     let appSecret = "b52239a6c3b5477590537ab36879dc4e"
     var refUsers:DatabaseReference!
+    var captchaNumbers = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         refUsers=Database.database().reference().child("users")
+        for index in 1...5 {
+            captchaNumbers+="\(index)"
+        }
+        captchaTextLabel.text=captchaNumbers
     }
     
     @IBAction func loginUser(_ sender: Any) {
@@ -51,7 +58,6 @@ class LoginViewController: UIViewController {
     @IBAction func registerUser(_ sender: Any) {
         let username = usernameTextField.text
         let password = passwordTextField.text
-
         if (username?.isEmpty)!||(password?.isEmpty)!{
             displayAlertMessage(userMessage: "The email field and the password field are required")
             usernameTextField.text=""
@@ -59,8 +65,13 @@ class LoginViewController: UIViewController {
             return
         }
         
-        if InternetConnectivity.isInternetServiceAvailable() {
             if let email=usernameTextField.text,let password=passwordTextField.text {
+                if (captchaSolutionTextField.text?.isEmpty)!{
+                    displayAlertMessage(userMessage: "A solution to the captcha is required")
+                    usernameTextField.text=""
+                    passwordTextField.text=""
+                    return
+                }
                 Auth.auth().createUser(withEmail: email,password: password,completion:{(user:User?,error) in
                     if error != nil{
                         self.view.makeToast("Error registering")
@@ -69,10 +80,6 @@ class LoginViewController: UIViewController {
                 })
                 displayAlertMessage(userMessage: "Registration successful")
             }
-        }else{
-            self.view.makeToast("Internet service is unavailable")
-        }
-        
     }
     
     func displayAlertMessage(userMessage:String){
@@ -83,3 +90,4 @@ class LoginViewController: UIViewController {
     }
     
 }
+
