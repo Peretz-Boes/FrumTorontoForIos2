@@ -43,6 +43,15 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
+			<key>www.frumnewyork.com</key>
+            <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.1</string>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+            </dict>
 			<key>mobileapps.x10host.com</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
@@ -65,3 +74,5 @@
 	</dict>
 </dict>
 </plist>
+
+

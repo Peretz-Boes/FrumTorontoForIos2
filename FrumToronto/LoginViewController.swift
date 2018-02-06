@@ -28,9 +28,15 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         refUsers=Database.database().reference().child("users")
         for index in 1...5 {
-            captchaNumbers+="\(index)"
+            var captchaNumber = arc4random_uniform(5)
+            captchaNumbers+="\(captchaNumber)"
         }
         captchaTextLabel.text=captchaNumbers
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
     }
     
     @IBAction func loginUser(_ sender: Any) {
@@ -90,4 +96,5 @@ class LoginViewController: UIViewController {
     }
     
 }
+
 

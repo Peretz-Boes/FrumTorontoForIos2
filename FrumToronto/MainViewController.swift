@@ -51,6 +51,12 @@ class MainViewController: UIViewController {
         self.view.makeToast("When the page loads click on calendar to log in to the calendar")
         UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
     }
+    @IBAction func searchAskTheRabbiDatabase(_ sender: Any) {
+        let url = NSURL(string: "http://www.frumnewyork.com/search.html")
+        UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+    }
+    @IBAction func showPersonsDirectorySearchWebpage(_ sender: Any) {
+        let url = NSURL(string: "http://www.frumnewyork.com/person_directory_search.html")
+        UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+    }
 }
-
-
