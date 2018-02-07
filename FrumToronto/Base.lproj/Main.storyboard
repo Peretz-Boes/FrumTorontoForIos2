@@ -77,7 +77,7 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="hBa-s3-362" kind="show" id="JpK-yb-TeW"/>
+                                            <action selector="showCalendarWebpage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ieq-cZ-A3E"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlu-71-xsI">
@@ -142,8 +142,8 @@
                                     <action selector="showCalendarLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bvc-Id-h1c"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aL-JU-RNn">
-                                <rect key="frame" x="51" y="496" width="219" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aL-JU-RNn">
+                                <rect key="frame" x="59" y="477" width="219" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="219" id="1Qj-Y2-bZv"/>
@@ -153,12 +153,11 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="searchAskTheRabbiDatabase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Kx-CJ-lpc"/>
                                     <action selector="showPersonsDirectorySearchWebpage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PKK-z4-ILp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIX-DA-3Dc">
-                                <rect key="frame" x="92" y="534" width="167" height="28"/>
+                                <rect key="frame" x="85" y="515" width="167" height="28"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="167" id="M7i-dp-VkZ"/>
@@ -1239,6 +1238,7 @@
                     <connections>
                         <outlet property="calendarWebpageWebView" destination="qm1-3P-8pZ" id="5Q1-bB-0JK"/>
                         <segue destination="Ey3-vz-S2A" kind="show" identifier="calendarViewControllerSegueOne" id="O0R-N5-uUi"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueToMainViewController" id="d3A-Ig-XNd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5se-0H-2aX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1800,12 +1800,11 @@
     <inferredMetricsTieBreakers>
         <segue reference="lre-DO-pwz"/>
         <segue reference="6ZJ-ru-cTY"/>
-        <segue reference="JpK-yb-TeW"/>
-        <segue reference="PoW-eJ-73b"/>
+        <segue reference="O0R-N5-uUi"/>
         <segue reference="4ih-pM-UDb"/>
         <segue reference="b3Q-hD-JBp"/>
         <segue reference="FVr-T6-ACL"/>
         <segue reference="QU1-8n-1vt"/>
-        <segue reference="wri-EG-8O5"/>
+        <segue reference="d3A-Ig-XNd"/>
     </inferredMetricsTieBreakers>
 </document>

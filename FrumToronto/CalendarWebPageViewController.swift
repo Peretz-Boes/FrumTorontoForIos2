@@ -26,7 +26,7 @@ class CalendarWebPageViewController: UIViewController {
     }
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
-       performSegue(withIdentifier: "calendarViewControllerSegueOne", sender: nil)
+       performSegue(withIdentifier: "segueToMainViewController", sender: nil)
     }
     
 }
